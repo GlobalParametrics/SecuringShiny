@@ -1,0 +1,20 @@
+proxy:
+  port: 8080
+  authentication: simple
+  admin-groups: admins
+  users:
+  - name: user
+    password: pass
+  docker:
+      internal-networking: true
+  specs:
+  - id: antipodes
+    display-name: Antipodes
+    description: Find the opposite place on earth
+    container-cmd: ["R", "-e", "antipodes::launchApp()"]
+    container-image: globalparametrics/antipodes
+    container-network: shinyproxy
+
+logging:
+  file:
+    shinyproxy.log
