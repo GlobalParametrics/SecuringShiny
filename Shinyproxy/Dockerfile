@@ -1,3 +1,6 @@
+# This is essentially a copy of https://github.com/openanalytics/shinyproxy-config-examples/tree/master/02-containerized-docker-engine
+# but with a different application.yml file
+
 FROM openjdk:8-jre
 
 RUN mkdir -p /opt/shinyproxy/
