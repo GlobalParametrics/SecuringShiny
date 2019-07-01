@@ -353,7 +353,7 @@ docker rmi globalparametrics/keycloakgatekeeper
 ### Cons:
 * You have to use apache, though if you really love nginx you could reverse proxy to nginx and then reverse proxy in nginx to shiny, but that sounds awful. Actually, there is an [nginx equivalent to this](https://github.com/tarachandverma/nginx-openidc).
 
-This is my favorite way of adding authentication to Shiny, because it's the simplest and the most flexible. It adds OpenID Connect authentication, just like with Auth0 and the Keycloak Gatekeeper methods, but it is integreated into the Apache web server and allows substantial configuration without a lot of additional setup.
+This is my favorite way of adding authentication to Shiny, because it's the simplest and the most flexible. It adds OpenID Connect authentication, just like with Auth0 and the Keycloak Gatekeeper methods, but it is integrated into the Apache web server and allows substantial configuration without a lot of additional setup.
 
 Before you start the containers, write the following to a file named `shiny.conf`, with:
 1. Your Auth0 organization in place of `<ORGANIZATION>`
