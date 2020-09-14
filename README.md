@@ -264,7 +264,7 @@ Login to keycloak at localhost:8080 withe the username `admin` and the password 
 
 Click the `Create` button at the top right and add the client ID "shiny". Switch the `Authorization Enabled` to `On` and add `http://localhost:8181/oauth/callback` to the `Valid Redirect URIs`. Click the save button and then go to `Credentials` and copy the `Secret` value.
 
-Open a text editor and paste this secret value in place of the `<CLIENT_ID>` and save the file under the name `gatekeeper.conf` and remember the path to this file (you'll need it later):
+Open a text editor and paste this secret value in place of the `<CLIENT_SECRET>` and save the file under the name `gatekeeper.conf` and remember the path to this file (you'll need it later):
 
 ```
 client-id: shiny
