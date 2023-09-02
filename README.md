@@ -114,7 +114,6 @@ docker rmi globalparametrics/auth0
 ### Cons:
 * Difficult to setup in production
 * Requires strong knowledge of Docker
-* Issues that break Shiny functionality (does not update query strings due to use of iframes, for example)
 
 Shinyproxy is a common choice for adding an authentication layer to your Shiny apps, while also adding options for scaling and application organization. The design of Shinyproxy revolves around encapsulating Shiny apps in Dockerfiles and therefore, docker images. Pull our Shinyproxy example image:
 
